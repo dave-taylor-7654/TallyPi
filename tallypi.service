@@ -1,0 +1,15 @@
+[Unit]
+Description=TallyPi - ATEM to Smartview Tally Bridge
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/tallypi
+ExecStart=/usr/bin/python3 /home/pi/tallypi/tallypi.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
