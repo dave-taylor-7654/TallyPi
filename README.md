@@ -23,8 +23,8 @@ Listens for program/preview changes from a Blackmagic ATEM switcher and sends ta
 Edit `tallypi.py` to set your device IPs:
 
 ```python
-ATEM_IP = "10.253.20.229"
-SMARTVIEW_IP = "10.253.20.211"
+ATEM_IP = "192.168.1.XX2"
+SMARTVIEW_IP = "192.168.1.XX1"
 ```
 
 Configure input-to-monitor mapping:
@@ -61,6 +61,3 @@ journalctl -u tallypi -f
 sudo systemctl restart tallypi
 ```
 
-## License
-
-MIT
